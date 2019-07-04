@@ -1,12 +1,14 @@
-/*
-    Theme Name: OnePage
-    Theme URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-*/
+
 /* ==== Google font ==== */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
 @import url('https://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700');
+
+#map { 
+  height:100%; 
+  width:50%;
+}
+
+.wrap { height:600px;}
 
 body {
     width: 100%;
@@ -24,6 +26,8 @@ p {
 	font-size:16px;
 
 }
+
+
 
 .btn-primary {
   padding: 8px 20px;
@@ -163,22 +167,9 @@ h2 { color:white;}
 }
 
 
-/* --- Map --- */
-.map{
-	position:relative;
-	padding-top:50px;
-	margin-top:50px;
-	
-}
-/* google map */
-#google-map{
-    position:relative;
-    height: 400px;
-}
-
 .contact-page{
   padding-top: 80px;
-  background:#eee;
+  background:#383000;
   margin-top:-10px;
 }
 
@@ -233,9 +224,6 @@ textarea#message{
     margin-bottom:15px;
 }
 
-#sendmessage.show, #errormessage.show, .show {
-	display:block;
-}
 
 #footer {
   padding-top: 30px;
