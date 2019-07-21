@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>One Page Bootstrap Template</title>
+   <!--The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>NearBar </title>
 
-  <!-- Bootstrap -->
+   <!--Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -16,12 +16,7 @@
   <link href="css/animate.css" rel="stylesheet" />
   <link href="css/prettyPhoto.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <!-- =======================================================
-    Theme Name: OnePage
-    Theme URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+ 
 </head>
 
 <body>
@@ -31,96 +26,114 @@
         <div class="site-logo">
           <a href="index.html" class="brand">NEAR BAR</a>
         </div>
-
-        <!-- Brand and toggle get grouped for better mobile display -->
-      
-        <!-- Collect the nav links, forms, and other content for toggling -->
       </div>
     </div>
   </nav>
-
   <div id="home">
     <div class="slider">
       <div id="about-slider">
         <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-         <div class="carousel-inner">
+          <div class="carousel-inner">
             <div class="item active">
               <img src="images/bar.jpeg" class="img-responsive" alt="">
             </div>
           </div>
-
-
-        <!--/#carousel-slider-->
-      </div>
-      <!--/#about-slider-->
-    </div>
-  </div>
-
-  <section id="about">
-    <div class="container">
-      <div class="center">
-        <div class="col-md-6 col-md-offset-3">
-          <h2>Near Bar Where ever you are</h2>
-          <hr>
-          <p class="lead">A simple website for Singaporeans to find the nearest place to grab a drink!</p>
         </div>
       </div>
     </div>
-  </section>
-   <div>
-  <button class="btn btn-secondary" role="button">NearBar</button>
-  <div class="js-location c-location">
-  </div>
-</div>
-  </section>
-  
-  <div class="wrap">
-  <div id="map"></div>
-  </div>
-  
-  <section id="contact">
-    <div class="contact-page">
+
+    <section id="about">
       <div class="container">
         <div class="center">
-          <h2>Contact Us</h2>
-        </div>
-        <div class="row contact-wrap">
-          <div class="col-md-8 col-md-offset-2">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
-                  data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
-                  data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
-                  data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
-                  placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
-            </form>
+          <div class="col-md-6 col-md-offset-3">
+            <h2>Near Bar Where ever you are</h2>
+            <hr>
+            <p class="lead">A simple website for Singaporeans to find the nearest place to grab a drink!</p>
           </div>
         </div>
-        <!--/.row-->
       </div>
-      <!--/.container-->
-    </div>
-    <!--/#contact-page-->
-  </section>
+    </section>
 
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" id="map">
+        </div>
+         <!--google Map-->
+        <div class="col-sm-6" id="results">
+          <h3>NEAR BARS</h3>
+
+<button id='locate'>locate</button>
+<select id="myselect" onchange="change_myselect(this.value)">
+  <option value="">Choose an option:</option>
+  <option value="customers">Cocktail</option>
+  <option value="products">Liveband</option>
+  <option value="suppliers">Sports</option>
+</select>
+
+<p id="demo"></p>
+
+<table id='bar-result' class='table'>
+  <tr>
+              <th>Name:</th>
+              <th>type:</th>
+            </tr>
+            <tr class='data-row'>
+              <td colspan='2'>
+              <p class="message box">Waiting, loading data....</p>
+
+                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+              </td>
+
+            </tr>
+          </table>
+        </div>
+
+      </div>
+  
+    </div>
+  </div>
+
+
+  <div>
+    <section id="contact">
+      <div class="contact-page">
+        <div class="container">
+          <div class="center">
+            <h2>Contact Me</h2>
+          </div>
+
+          <div class="row contact-wrap">
+            <div class="col-md-8 col-md-offset-2">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+
+                <div class="text-center"><button type="submit" class="btn btn-danger btn-lg">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <footer id="footer" class="midnight-blue">
     <div class="container">
       <div class="row">
@@ -128,14 +141,9 @@
           <div class="text-center">
             <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
           </div>
+
           <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=OnePage
-            -->
-            Designed by <a href="https://bootstrapmade.com/">Marcus Tang</a>
+            Designed by <a href="#">Marcus Tang</a>
           </div>
         </div>
 
@@ -147,7 +155,7 @@
                 <li><a href="#"><i class="fa fa-github"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              
+
               </ul>
             </div>
           </div>
@@ -155,21 +163,26 @@
       </div>
     </div>
   </footer>
-  <!--/#footer-->
+  /#footer
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   jQuery (necessary for Bootstrap's JavaScript plugins) 
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="js/jquery.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
+   Include all compiled plugins (below), or include individual files as needed 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.prettyPhoto.js"></script>
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL47l7zVIMHRRLPXT2lfY4GBJd8QO9Y8c&callback=initMap"
-    async defer></script>
-  <script src="js/main.js"></script>
-  <script src="js/app.js"></script>  
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL47l7zVIMHRRLPXT2lfY4GBJd8QO9Y8c&callback=initMap&libraries=places" async defer></script>
+  <script src="js/app.js"></script>
+  <script src="js/map.js"></script>    
+   
 </body>
 
 </html>
+
+
+
+
+

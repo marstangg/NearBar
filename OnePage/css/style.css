@@ -4,11 +4,14 @@
 @import url('https://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700');
 
 #map { 
-  height:100%; 
-  width:50%;
+       height:400px;
+       width:500px;
 }
 
-.wrap { height:600px;}
+#results { color:#b88c4d;
+  
+}
+
 
 body {
     width: 100%;
@@ -51,7 +54,7 @@ p {
 .site-logo {	
 	margin-top:40px;
 	margin-bottom:40px;
-    float: left;
+  float: left;
 }
 
 h2 { color:white;}
@@ -85,69 +88,7 @@ h2 { color:white;}
 	padding:30px;
 }
 
-.navbar-fixed-top ul.nav li a {
-	font-size: 14px;
-	letter-spacing: 3px;
-    color: #000;
-	text-transform: uppercase;
-	font-weight: 700;
-}
 
-.navbar-fixed-top.top-nav-collapse ul.nav li a {
-	    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-	color: #fff;
-}
-
-.navbar-fixed-top ul.nav ul.dropdown-menu {
-	  border-radius: 0;	
-	margin-top: 21px;
-	border-top: none;
-}
-
-.navbar-fixed-top ul.nav li a:hover ul.dropdown-menu {
-	    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.navbar-fixed-top ul.nav ul.dropdown-menu li:last-child{
-	border-bottom: none;
-}
-
-.navbar-fixed-top ul.nav ul.dropdown-menu li a {
-	padding: 10px 20px;
-}
-
-.navbar-fixed-top.top-nav-collapse ul.nav ul.dropdown-menu li a {
-	color: #666;
-}
-
-.navbar-fixed-top .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-
-.navbar-fixed-top .nav li a:hover,
-.navbar-fixed-top .nav li a:focus,
-.navbar-fixed-top.nav li.active {
-    outline: 0;
-  
-	color:#2487cd ;
-}
-
-.navbar-toggle {
-    padding: 4px 12px;
-    font-size: 18px;
-    color: #000;
-}
-
-.navbar-toggle:focus,
-.navbar-toggle:active {
-    outline: 0;
-}
 
 .slider {
 	padding-top:50px;
@@ -169,7 +110,7 @@ h2 { color:white;}
 
 .contact-page{
   padding-top: 80px;
-  background:#383000;
+  background:#161f16;
   margin-top:-10px;
 }
 
@@ -184,7 +125,7 @@ h2 { color:white;}
   padding: 7px 12px;
   border-color:#f2f2f2;
   box-shadow: none;
-  border-radius:0;
+  border-radius:10;
 }
 
 textarea#message{
