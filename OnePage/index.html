@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,13 +22,11 @@
 <body>
   
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="row">
-        <div class="site-logo">
-          <a href="index.html" class="brand">NEAR BAR</a>
-        </div>
+      <div class="container">
+          <div class="site-logo">
+            <a href="index.html" class="brand">NEAR BAR</a>
+          </div>
       </div>
-    </div>
   </nav>
   <div id="home">
     <div class="slider">
@@ -58,9 +56,9 @@
 
     <div class="container">
       <div class="row">
+         <!--a div for google Map to appear-->
         <div class="col-sm-6" id="map">
         </div>
-         <!--google Map-->
         <div class="col-sm-6" id="results">
           <h3>NEAR BARS</h3>
 
@@ -81,7 +79,7 @@
   <option value="ALL">ALL</option>
 </select>
 <button id='refresh' onclick="initMap()">Refresh</button>
-<table id='bar-result' class='table'>
+<table id='panel' class='table'>
   <tr>
               <th>Name:</th>
               <th>type:</th>
@@ -169,12 +167,12 @@
       </div>
     </div>
   </footer>
-  /#footer
+  <!--footer-->
 
-   jQuery (necessary for Bootstrap's JavaScript plugins) 
+   <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="js/jquery.js"></script>
-   Include all compiled plugins (below), or include individual files as needed 
+   <!--Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.prettyPhoto.js"></script>
   <script src="js/jquery.isotope.min.js"></script>
@@ -182,7 +180,6 @@
   <script src="js/jquery.easing.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL47l7zVIMHRRLPXT2lfY4GBJd8QO9Y8c&callback=initMap&libraries=places" async defer></script>
   <script src="js/app.js"></script>
-  <script src="js/map.js"></script>    
    
 </body>
 
