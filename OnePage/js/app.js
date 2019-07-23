@@ -10,7 +10,7 @@
        };
        map = new google.maps.Map(document.getElementById('map'), {
          center: myLoc,
-         zoom: 13
+         zoom: 15
        });
        infowindow = new google.maps.InfoWindow();
        var service = new google.maps.places.PlacesService(map);
