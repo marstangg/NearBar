@@ -4,8 +4,9 @@
 @import url('https://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700');
 
 #map { 
-       height:550px;
+       height:650px;
        width:500px;
+       margin-top:30px;
        margin-bottom:50px;
 }
 
@@ -14,7 +15,7 @@
 }
 
 
-.hero {
+.pics {
       width: 500px;
       height: 500px;
 

@@ -136,7 +136,7 @@
      if (placeResult.photos) {
          let firstPhoto = placeResult.photos[0];
          let photo = document.createElement('img');
-         photo.classList.add('hero');
+         photo.classList.add('pics');
          photo.src = firstPhoto.getUrl();
          infoPane.appendChild(photo);
      }
