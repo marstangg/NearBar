@@ -74,16 +74,19 @@
          createMarkers(results);
      }
  }
+ 
  // Set markers at the location of each place result
  function createMarkers(places) {
      places.forEach(place => {
          let marker = new google.maps.Marker({
              position: place.geometry.location,
              map: map,
-             title: place.name
+             title: place.name,
+             icon: 'images/pub-icon.png'
          });
-         
+   
          // Add click listener to each marker
+         // Only fetch the details of a place when the user clicks on a marker*/
          google.maps.event.addListener(marker, 'click', () => {
              let request = {
                  placeId: place.place_id,
@@ -91,8 +94,6 @@
                      'website', 'photos'
                  ]
              };
-             /* Only fetch the details of a place when the user clicks on a marker*/
-    
              service.getDetails(request, (placeResult, status) => {
                  showDetails(placeResult, marker, status)
              });
@@ -121,7 +122,6 @@
          console.log('showDetails failed: ' + status);
      }
  }
- /* TODO: Step 4D: Load place details in a sidebar */
  // Displays place details in a sidebar
  function showPanel(placeResult) {
      // If infoPane is already open, close it
