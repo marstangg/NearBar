@@ -62,22 +62,12 @@
         <div class="col-sm-6" id="results">
           <h3>NEAR BARS</h3>
 
-
-          <!-- drop down menu to filter type of bar-->
-          <select id="myselect" onchange="change_myselect(this.value)">
-  <option value="">Choose an option:</option>
-  <option value="Cocktail">Cocktail</option>
-  <option value="liveband">Liveband</option>
-  <option value="sports">Sports</option>
-</select>
           <!-- drop down menu to filter distance-->
-          <select id="distselect" onchange="change_disselect(this.value)">
-  <option value="">filter by distance:</option>
-  <option value="2KM">2 KM</option>
-  <option value="5KM">5KM</option>
-  <option value="10KM">10 KM</option>
-  <option value="ALL">ALL</option>
-</select>
+  <input type="checkbox" name="filter" id="3" class="chk-btn">
+  <label for="3 stars">3 stars</label>
+  <input type="checkbox" name="filter" id="4" class="chk-btn">
+  <label for="4 stars">4 stars</label>
+ 
           <button id='refresh' onclick="initMap()">Locate</button>
           <table id='panel' class='table'></table>
 

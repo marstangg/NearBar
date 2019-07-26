@@ -23,6 +23,7 @@
                  center: pos,
                  zoom: 15
              });
+             
              bounds.extend(pos);
              infoWindow.setPosition(pos);
              infoWindow.setContent('You are Here!');
@@ -46,7 +47,7 @@
      pos = { lat: 1.35, lng: 103.891 };
      map = new google.maps.Map(document.getElementById('map'), {
          center: pos,
-         zoom: 15
+         zoom: 13
      });
      // Display an InfoWindow at the map center
      infoWindow.setPosition(pos);
