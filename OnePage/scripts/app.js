@@ -6,8 +6,8 @@
  let service;
  let infoPane;
  
- function initMap() {
      // Initialize map
+     function initMap() {
      bounds = new google.maps.LatLngBounds();
      infoWindow = new google.maps.InfoWindow;
      currentInfoWindow = infoWindow;
@@ -43,7 +43,7 @@
  }
  // Handle a geolocation error
  function handleLocationError(browserHasGeolocation, infoWindow) {
-     // Set default location to Sydney, Australia
+     // Set default location to singapore
      pos = { lat: 1.35, lng: 103.891 };
      map = new google.maps.Map(document.getElementById('map'), {
          center: pos,
@@ -69,7 +69,7 @@
      service = new google.maps.places.PlacesService(map);
      service.nearbySearch(request, nearbyCallback);
  }
- // Handle the results (up to 20) of the Nearby Search
+ // Handle the results of the Nearby Search
  function nearbyCallback(results, status) {
      if (status == google.maps.places.PlacesServiceStatus.OK) {
          createMarkers(results);
