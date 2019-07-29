@@ -1,37 +1,38 @@
 NEARBAR 
 
-A single page application for anyone to find the nearest bar around their current location. This application allows users to search for their dream holiday destination, accomodation, nearby bars/restaurants and tourist attractions within that area.
+A single page application for users to find the nearest bar with the highest ratings around their current location. This project was created to so that users could easily find a place of quality to unwind and relax.
 
 UX DESIGN
-This application isn't for those who wish to book a holiday, but gives them the opportunity to see the interesting and fun places in the surrounding area of their desired destination. The user is able to see ratings of each hotel and restaurants, address and contact details also.
+Design for this project is simple and clear so as to not distract users from the main purpose of the website. The main goal is that any user can quickly find the nearest and highest rated bars based on users current location. The user is able to see ratings, address and contact details of each bar.
 
 User Stories:
-As a User I want to be able to see other peoples reviews for specific places for example, a restaurant, so that I have a good understanding on whether or not that place would be worth going to.
-As a User I want to be able to search for specific areas, so that my searches aren't limited.
-As a User I want to search for bars and restaurants, so that I get an understanding of where places are so I can plan my stay.
-As a User I want to select a specific bar, restaurant or hotel and get the correct contact details and address for that place, so that I can give a place a call to reserve a table if need be.
+As a User I want to be able to find a decent bar around me quickly .
+As a User I want to be able to search for bars around my location so that is it convenient for me.
+As a User I dont want to be wasting time sourcing for highly rated bars and then trying to find the bars location.
+As a User I want to select a specific bar and get the correct contact details and address for that place, so that I can give a place a call to reserve a table if need be. A picture of the place would be most welcomed.
+
 FEATURES
 Features Used in This Project:
-Able to search for any location in the world.
-Find the closest accomodation/bars/restaurants in that area.
-View the ratings of each hotel/bar/restaurant.
-View the contact details and address of each hotel/bar/restaurant.
-View and select the tourist attractions/points of interest within the specified area.
-Added reset button to refresh the page if you wish to restart your search.
+Able to search for highest rated bars around users current location.
+View the ratings of each bar.
+View the contact details and address of each bar.
+View the photo of the bar as this would enhance users choice.
+Added a locate button to refresh geolocation in case user wishes to restart search.
+
 TECHNOLOGIES
 The Technologies I Have Used:
-Google Maps API - I have used the Google Maps API for use of their google maps service.
-Google Places API - I have use the Google Places Api for use of their points of interest/hotels/bars to be added to my map.
+Google Maps API - I have used the Google Maps API for their google maps service.
+Google Places API - I have use the Google Places Api for use of their points of bars to be added to my map.
 Bootstrap - I have used Bootstrap for it's grid system, making my application responsive.
 Boostrap Font Awesome - I have used the Bootstrap Font Awesome CDN to make use of their social icons.
-jQuery - I have used jQuery for simplicity with my JavaScript. jQuery I actually removed as I thought it would make the application slower and decided to use Vanilla JS.
-Balsamiq - I have use Balsamiq to create my Mockups for this application which can be found Here.
+javascript - All major functionality for this project is dependent on JavaScript.
+
+
 TESTING
 I conducted tests on a wide selction of browsers/devices to ensure User's can successfully use the site and it's features.
 
 Tests conducted:
-
-Checking the functionality of the Google Maps Api, making sure everything worked as it should
+checks were done to ensure functionality of the Google Maps Api, making sure everything worked as it should
 Making sure the code runs wihtout issues using the Google Chrome Inspect Tools. Inside Chromes Dev Tools I can:
 Check the responsiveness for individual phones and screens, example, an IPhone/Samsung.
 Use the console to check the stability of my JavaScript files so that there is no errors and it is not broken.
@@ -63,11 +64,8 @@ CREDIT
 Content
 Most of the content used in this project has been noted within the Technologies section.
 
-I did however use Traversy Media's Youtube Channel. Specificly his videos on the Google Maps API giving me a better insight, which can be found Here.
-
 ACKNOWLEDGEMENTS
 I recieved inspiration for this project from:
 
-Friends.
-My Mentor Juan.
-Various Youtube Channels, one mentioned above.
+stackoverflow 
+tutorial republic - https://www.tutorialrepublic.com/html-tutorial/html5-geolocation.php
