@@ -5,14 +5,15 @@
  let currentInfoWindow;
  let service;
  let infoPane;
- 
+ var filterfive = document.getElementById("filterfive");
      // Initialize map
      function initMap() {
      bounds = new google.maps.LatLngBounds();
      infoWindow = new google.maps.InfoWindow;
      currentInfoWindow = infoWindow;
      infoPane = document.getElementById('panel');
-     // Try HTML5 geolocation
+
+    // Try HTML5 geolocation
      if (navigator.geolocation) {
          navigator.geolocation.getCurrentPosition(position => {
              pos = {
@@ -23,7 +24,7 @@
                  center: pos,
                  zoom: 15
              });
-             
+
              bounds.extend(pos);
              infoWindow.setPosition(pos);
              infoWindow.setContent('You are Here!');
@@ -32,11 +33,10 @@
              var marker = new google.maps.Marker({
              position: pos,
              icon: 'images/youarehere.png',
-             animation: google.maps.Animation.DROP,
              map: map
-           });   
+          });
              // Call Places Nearby Search on user's location
-            getNearbyPlaces(pos);
+             getNearbyPlaces(pos);
          }, () => {
              // Browser supports geolocation, but user has denied permission
              handleLocationError(true, infoWindow);
@@ -66,34 +66,57 @@
      getNearbyPlaces(pos);
  }
  // Perform a Places Nearby Search Request
- function getNearbyPlaces(position) {
+     function getNearbyPlaces(position) {
      let request = {
          location: position,
          rankBy: google.maps.places.RankBy.DISTANCE,
          keyword: 'bar'
-     };
+
+  };
      service = new google.maps.places.PlacesService(map);
      service.nearbySearch(request, nearbyCallback);
- }
+}
+    
+    
+    function getNearbyPlaces2(position) {
+     let request = {
+         location: position,
+         radius: 5000,
+         keyword: 'bar'
+
+  };
+     service = new google.maps.places.PlacesService(map);
+     service.nearbySearch(request, nearbyCallback);
+} 
+    
+    
+    
+    
  // Handle the results of the Nearby Search
  function nearbyCallback(results, status) {
      if (status == google.maps.places.PlacesServiceStatus.OK) {
          createMarkers(results);
      }
- }
- 
+   }
+
  // Set markers at the location of each place result
- function createMarkers(places) {
-     places.forEach(place => {
+      function createMarkers(places) {
+      places.forEach(place => {
          let marker = new google.maps.Marker({
              position: place.geometry.location,
              map: map,
              title: place.name,
              icon: 'images/pub-icon.png'
          });
-   
-         // Add click listener to each marker
-         // Only fetch the details of a place when the user clicks on a marker*/
+         
+       let marker2 = new google.maps.Marker({
+             position: place.geometry.location,
+             radius:5000,
+             map: map,
+             title: place.name,
+             icon: 'images/pub-icon.png'
+         });
+ // Only fetch the details of a place when the user clicks on a marker*/
          google.maps.event.addListener(marker, 'click', () => {
              let request = {
                  placeId: place.place_id,
@@ -108,7 +131,7 @@
          // Adjust the map bounds to include the location of this marker
          bounds.extend(place.geometry.location);
      });
-    
+
       /* show all the markers within the visible area. */
      map.fitBounds(bounds);
  }
