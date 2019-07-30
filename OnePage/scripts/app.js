@@ -31,7 +31,7 @@
              map.setCenter(pos);
              var marker = new google.maps.Marker({
              position: pos,
-             icon: 'images/youarehere.png',
+             icon: 'OnePage/images/youarehere.png',
              animation: google.maps.Animation.DROP,
              map: map
            });   
@@ -89,7 +89,7 @@
              position: place.geometry.location,
              map: map,
              title: place.name,
-             icon: 'images/pub-icon.png'
+             icon: 'OnePage/images/pub-icon.png'
          });
    
          // Add click listener to each marker
