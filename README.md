@@ -1,6 +1,8 @@
 NearBar
 ========
 
+<img width="700" alt="screenshot" src="https://user-images.githubusercontent.com/21357021/62422908-97fd2e80-b6ec-11e9-898e-8f08c891b2a9.png">
+ 
 A single page application for users to find the nearest bar with the highest ratings around their current location. This project was created to so that users could easily find a place of quality to unwind and relax.
 
 UX DESIGN:
@@ -54,6 +56,17 @@ User Stories Testing:
 
 "As a User I want to select a specific bar and get the correct contact details and address for that place, so that I can give a place a call to reserve a table if need be." This was tested by again making sure I had used Google's API correctly and it was showing the correct infomation.
 
+CONTRIBUTIONS
+==============
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
+
 DEPLOYMENT
 ===========
 This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named index.html.
@@ -62,9 +75,13 @@ To run locally, you can clone this repository directly into the editor of your c
 
 CREDIT
 =======
-Content
-Most of the content used in this project has been noted within the Technologies section.
+Would like to credit SashaZd from stackoverflow for the guide on how to rankBy search- https://stackoverflow.com/questions/10726533/google-maps-api-v3-how-to-rank-by-closest-distance
 
+REFERENCES
+===========
+this project uses google API. 
+
+Here is a link for full documentation - https://developers.google.com/maps/documentation/javascript/tutorial
 
 ACKNOWLEDGEMENTS
 ==================
