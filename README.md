@@ -2,6 +2,7 @@ NearBar
 ========
 
 <img width="700" alt="screenshot" src="https://user-images.githubusercontent.com/21357021/62422908-97fd2e80-b6ec-11e9-898e-8f08c891b2a9.png">
+Live demo link -  https://marstangg.github.io/NearBar/ 
  
 A single page application for users to find the nearest bar with the highest ratings around their current location. This project was created to so that users could easily find a place of quality to unwind and relax.
 
